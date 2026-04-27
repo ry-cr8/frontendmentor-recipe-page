@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Young Serif;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* Reset some default spacing */
+body {
+  background-color: hsl(30, 54%, 90%);
+  margin: 0;
+  padding: 16px;
+}
+
+/* Main container */
+#recipe-card {
+  background-color: white;
+  width: 100%;
+  max-width: 736px;
+  margin: 20px auto;
+  padding: 24px 16px;
+  border-radius: 15px;
+}
+
+/* Typography */
+main {
+  font-family: "Outfit";
+}
+
+h1 {
+  font-family: "Young Serif";
+  color: hsl(24, 5%, 18%);
+  font-size: clamp(24px, 5vw, 36px);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+p,
+li {
+  color: hsl(30, 10%, 34%);
+  font-size: clamp(14px, 2.5vw, 16px);
+  line-height: 1.6;
+}
+
+/* Preparation box */
+.preparation-box {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Image */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid hsl(30, 10%, 70%);
+  padding: 10px;
+  text-align: left;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 14px;
+}
+
+:focus {
+  outline: 2px solid hsl(14, 45%, 36%);
+  outline-offset: 2px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  #recipe-card {
+    padding: 32px;
+  }
+
+  .preparation-box {
+    padding: 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    padding: 40px;
+  }
+}
