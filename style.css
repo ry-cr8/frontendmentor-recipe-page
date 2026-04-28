@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Young Serif;
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
@@ -12,59 +18,61 @@
 body {
   background-color: hsl(30, 54%, 90%);
   margin: 0;
-  padding: 16px;
+  padding: 1rem;
 }
 
 /* Main container */
-#recipe-card {
+.recipe-card {
   background-color: white;
   width: 100%;
-  max-width: 736px;
-  margin: 20px auto;
-  padding: 24px 16px;
-  border-radius: 15px;
+  max-width: 46rem;
+  margin: 1.25rem auto;
+  padding: 1.5rem 1rem;
+  border-radius: 0.9375rem;
 }
 
 /* Typography */
 main {
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
 }
 
 h1 {
-  font-family: "Young Serif";
+  font-family: "Young Serif", serif;
   color: hsl(24, 5%, 18%);
-  font-size: clamp(24px, 5vw, 36px);
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
 }
 
-h2 {
+h2,
+td {
   color: hsl(14, 45%, 36%);
 }
 
-h3 {
+.prept {
   color: hsl(332, 51%, 32%);
 }
 
 p,
-li {
+li,
+th {
   color: hsl(30, 10%, 34%);
-  font-size: clamp(14px, 2.5vw, 16px);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   line-height: 1.6;
 }
 
 /* Preparation box */
 .preparation-box {
   background-color: hsl(330, 100%, 98%);
-  padding: 20px;
-  border-radius: 12px;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
 }
 
 /* Image */
-img {
+.hero img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px;
-  margin-bottom: 16px;
+  border-radius: 0.9375rem;
+  margin-bottom: 1rem;
 }
 
 /* Table */
@@ -76,34 +84,47 @@ table {
 th,
 td {
   border-bottom: 1px solid hsl(30, 10%, 70%);
-  padding: 10px;
+  padding: 0.625rem;
   text-align: left;
+}
+
+footer {
+  font-family: "Outfit", sans-serif;
 }
 
 .attribution {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* Focus accessibility */
+:focus-visible {
+  outline: 0.125rem solid hsl(14, 45%, 36%);
+  outline-offset: 0.125rem;
 }
 
 :focus {
-  outline: 2px solid hsl(14, 45%, 36%);
-  outline-offset: 2px;
+  outline: 0.125rem solid hsl(14, 45%, 36%);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* Tablet */
-@media (min-width: 768px) {
-  #recipe-card {
-    padding: 32px;
+@media (min-width: 48rem) {
+  .recipe-card {
+    padding: 2rem;
   }
 
   .preparation-box {
-    padding: 24px;
+    padding: 1.5rem;
   }
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
-    padding: 40px;
+    padding: 2.5rem;
   }
 }
