@@ -23,11 +23,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Solution](ss.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/used-the-agent-to-precisely-copy-the-layout-design-vchLgnJ_9t)
 - Live Site URL: [Frontend Mentor(Recipe page)](https://ry-cr8.github.io/frontendmentor-recipe-page/)
 
 ## My process
@@ -36,12 +36,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- 
+- 
+
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -57,11 +54,6 @@ To see how you can add code snippets, see below:
 ```css
 .proud-of-this-css {
   color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
 }
 ```
 
